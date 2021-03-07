@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WeatherAppAngular';
+  cards = [];
+  display = false;
+
+  showCards(cards) {
+    console.log("I GOT CARDS FROM CHILD")
+    console.log(cards)
+    this.cards = cards;
+    this.display = true;
+  }
 }

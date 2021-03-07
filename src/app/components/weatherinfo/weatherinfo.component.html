@@ -1,0 +1,10 @@
+<div class="container">
+    <h2> Weather Zipcode </h2>
+    <form #userForm=ngForm (ngSubmit)="submitHandler(userForm.value)">
+        <div class="form-group">
+            <label>Zipcode</label>
+            <input type="text" class="form-control" name="zipcode" ngModel>
+        </div>
+        <button type="submit" class="btn btn-primary"> Get Zipcodes</button>
+    </form>
+</div>
